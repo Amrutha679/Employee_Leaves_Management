@@ -18,6 +18,7 @@ ResultSet rs = ps.executeQuery();
 if(rs.next())
 	session.setAttribute("mid",rs.getInt(1));
 	session.setAttribute("department",rs.getString(4));
+	session.setAttribute("department",rs.getString(4));
 	response.sendRedirect("manager_homepage.html");
 %>
 <h1>Login Successfully</h1>
